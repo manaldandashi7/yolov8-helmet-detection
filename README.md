@@ -1,4 +1,4 @@
-readme = """# 🪖 Helmet Safety Detection – YOLOv8 Fine-Tuning
+# Helmet Safety Detection – YOLOv8 Fine-Tuning
 
 A computer vision project that fine-tunes a pretrained YOLOv8 model to detect helmet usage among motorbike riders, built as a hands-on application of object detection concepts.
 
@@ -63,9 +63,7 @@ All three losses (box, cls, dfl) decreased consistently across 30 epochs. Valida
 
 ## 🚀 How to Run
 
-```bash
 pip install ultralytics roboflow
-```
 
 Then open `yolov8_object_detection.ipynb` in Google Colab and run all cells.
 
@@ -76,9 +74,3 @@ Then open `yolov8_object_detection.ipynb` in Google Colab and run all cells.
 - PNumber had the lowest recall (71.5%) — license plates are small and sometimes blurry
 - Model correctly classified helmet/no-helmet even on out-of-distribution close-up images
 - Training converged around epoch 15; losses plateaued confirming 30 epochs was sufficient
-"""
-
-with open('README.md', 'w') as f:
-    f.write(readme)
-
-print("README.md created ✅")
